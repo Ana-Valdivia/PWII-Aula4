@@ -1,11 +1,14 @@
+"use strict";
+exports.__esModule = true;
 var Viagem = /** @class */ (function () {
-    function Viagem(tempoGasto, VelocidadeM, Rendimento, Distancia, Consumo) {
+    function Viagem(tempoGasto, VelocidadeM, Rendimento) {
         this.tempoGasto = tempoGasto;
         this.VelocidadeM = VelocidadeM;
         this.Rendimento = Rendimento;
-        this.Distancia = Distancia;
-        this.Consumo = Consumo;
     }
+    Viagem.prototype.exibir = function () {
+        throw new Error("Method not implemented.");
+    };
     Viagem.prototype.distancia = function () {
         return (this.tempoGasto * this.VelocidadeM);
     };
@@ -14,3 +17,4 @@ var Viagem = /** @class */ (function () {
     };
     return Viagem;
 }());
+exports.Viagem = Viagem;
